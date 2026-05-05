@@ -304,7 +304,7 @@ export function PlantAIDashboard() {
                 <p className="text-xs text-muted-foreground">Live Camera</p>
                 <div className="mt-3 h-28 w-full overflow-hidden rounded-md border border-border/40 bg-black/10">
                   <video
-                    src="/livecamera.mp4"
+                    src="/videos/live-camera.mp4"
                     className="h-full w-full object-cover"
                     autoPlay
                     muted
