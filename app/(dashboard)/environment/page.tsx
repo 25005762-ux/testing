@@ -2,7 +2,7 @@ import WaterDashboard from "@/components/environment/WaterDashboard";
 
 /**
  * Environment Page - AI Control Command Center
- * Focused on Member 3 tasks: Monitoring, Alerts, and Mode Switching.
+ * Focused on Member 3 tasks: Monitoring, Automated Correction, and Scheduling.
  */
 export default function EnvironmentPage() {
   return (
@@ -17,7 +17,7 @@ export default function EnvironmentPage() {
         </p>
       </div>
 
-      {/* Visual Separator */}
+      {/* AI Branding Separator */}
       <div className="w-full px-8 flex items-center gap-4 py-2">
         <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
         <span className="text-[10px] font-black uppercase tracking-[0.3em] text-indigo-500/60">
@@ -26,15 +26,9 @@ export default function EnvironmentPage() {
         <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
       </div>
 
-      {/* Smart Control Panel (Member 3: MetricCards & Toggles) */}
+      {/* Main Dashboard Component */}
       <section className="flex-1 px-8 pb-20 pt-4">
         <div className="max-w-6xl mx-auto">
-          {/* 
-            This component contains your:
-            1. Mode Switcher (Auto/Manual)
-            2. Alert Cards (MetricCard)
-            3. Hardware Toggles (SystemToggle)
-          */}
           <WaterDashboard />
         </div>
       </section>

@@ -2,7 +2,7 @@ import { DigitalTwin } from "@/components/environment/DigitalTwin"
 
 /**
  * Water System Page - Digital Twin Visualization
- * Focused on the physical flow and system-wide simulation.
+ * Focused on physical flow, pump simulation, and system-wide fluid dynamics.
  */
 export default function WaterSystemPage() {
   return (
@@ -17,18 +17,22 @@ export default function WaterSystemPage() {
         </p>
       </div>
 
-      {/* Main Simulation Component (Member 1 Focus) */}
+      {/* Main Simulation Component */}
+      {/* This component handles the visual flow, layers, and fish tank animations */}
       <section className="p-6">
         <DigitalTwin />
       </section>
 
-      {/* Footer Info */}
+      {/* Footer Simulation Metadata */}
       <div className="px-8 pb-12">
         <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/30">
-          <p className="text-xs text-slate-500 uppercase font-black tracking-widest">
-            Simulation Status
-          </p>
-          <p className="text-slate-300 text-sm mt-2 italic">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse" />
+            <p className="text-xs text-slate-500 uppercase font-black tracking-widest">
+              Simulation Status: Active
+            </p>
+          </div>
+          <p className="text-slate-300 text-sm italic">
             "Visualizing the closed-loop nutrient cycle between the aquaponic tank and vertical farm layers."
           </p>
         </div>
